@@ -1,0 +1,51 @@
+.hero {
+  background-color: $flat-white;
+}
+
+.hero__wrapper {
+  padding: 20px 20px 60px 20px;
+  text-align: center;
+}
+
+.hero__badge {
+  color: $base-primary;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.hero__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0;
+}
+
+.hero__description {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.hero__order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+}
+
+.hero__old-price {
+  font-size: 16px;
+  line-height: 32px;
+  color: $base-primary;
+  text-decoration-line: line-through;
+}
+
+.hero__new-price {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+

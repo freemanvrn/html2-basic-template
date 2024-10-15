@@ -1,0 +1,39 @@
+.features__wrapper {
+  padding: 50px 20px 60px 20px;
+  text-align: center;
+}
+
+.features__badge {
+  color: $base-primary;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.features__reasons {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 0;
+}
+
+.features__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 0;
+}
+
+.features__description {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
