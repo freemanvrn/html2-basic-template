@@ -1,0 +1,17 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__toggle-link {
+  color: $base-black;
+  text-decoration: none;
+}
+
+.main-nav__link {
+  color: $base-black;
+  text-decoration: none;
+}

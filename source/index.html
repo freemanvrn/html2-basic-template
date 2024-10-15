@@ -1,17 +1,72 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="main-header container" data-test="header">
+    <a class="main-header__logo" href="#">
+      <picture>
+        <source media="(min-width: 1440px)" width="170" height="36" type="image/svg+xml" srcset="images/logo-desktop.svg">
+        <source media="(min-width: 768px)" width="82" height="36" type="image/svg+xml" srcset="images/logo-tablet.svg">
+        <img class="main-header__logo-image" src="images/logo-mobile.svg" width="32" height="36" alt="Логотип Cat Energy">
+      </picture>
+    </a>
+    <nav class="main-nav main-nav--closed">
+      <div class="main-nav__toggle-wrapper">
+        <a class="main-nav__toggle-link" href="#">
+          <span class="visually-hidden">Войти</span>
+        </a>
+        <a class="main-nav__toggle-link" href="#">
+          <span class="visually-hidden">Корзина</span>
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <div class="main-nav__list-wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item  main-nav__item--current">
+            <a class="main-nav__link" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Доставка
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              О нас
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <h1 class="visually-hidden">Drink2Go - качественные кофейные напитки в удобном формате</h1>
+
+    <section class="hero" data-test="hero">
+      <h2 class="hero__title">
+        Свежесваренный кофе в баночке
+      </h2>
+    </section>
+  </main>
+
+</body>
+
 </html>
