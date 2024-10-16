@@ -1,36 +1,71 @@
 .catalog {
   background-color: $lightest-grey;
- }
+}
 
- .catalog__wrapper {
-  padding: 50px 20px 44px 20px;
- }
+.catalog__wrapper {
+  padding: 50px 20px 44px;
+}
 
- .catalog__badge {
+.catalog__badge {
   color: $base-primary;
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
   margin: 0;
- }
+}
 
- .catalog__heading {
+.catalog__heading {
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
   margin: 0;
- }
+}
 
- .catalog__filter-heading {
+.catalog__filter-heading {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
   margin: 0;
- }
+}
 
- .catalog__cards-list {
+.catalog__cards-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
- }
+}
+
+.catalog__pagination {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.catalog__pagination-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog__pagination-link {
+  text-decoration: none;
+  color: $base-primary;
+  background-color: $base-white;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 4px;
+  min-width: 40px;
+  min-height: 40px;
+  text-align: center;
+  padding: 8px;
+}
+
+.catalog__pagination-link--current {
+  background-color: $lightest-grey;
+  color: $base-black;
+  font-weight: 600;
+}
+

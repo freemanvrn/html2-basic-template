@@ -86,11 +86,11 @@
           <span class="hero__new-price">
             225₽
           </span>
-          <button class="hero__button button">
+          <button class="hero__button button" type="button">
             Заказать
           </button>
         </div>
-    </div>
+      </div>
     </section>
 
     <section class="features" data-test="features">
@@ -156,9 +156,9 @@
             </div>
             <div class="catalog__filter-value">
               <label class="visually-hidden" for="min-price">от</label>
-                  <input class="catalog__filter-input catalog__filter-input--min" type="number" name="min-price" id="min-price" value="0" aria-label="Введите минимальную цену">
-                <label class="visually-hidden" for="max-price">до</label>
-                  <input class="catalog__filter-input catalog__filter-input--max" type="number" name="max-price" id="max-price" value="900" aria-label="Введите максимальную цену">
+              <input class="catalog__filter-input catalog__filter-input--min" type="number" name="min-price" id="min-price" value="0" aria-label="Введите минимальную цену">
+              <label class="visually-hidden" for="max-price">до</label>
+              <input class="catalog__filter-input catalog__filter-input--max" type="number" name="max-price" id="max-price" value="900" aria-label="Введите максимальную цену">
             </div>
           </fieldset>
           <fieldset class="catalog__filter-milk">
@@ -169,29 +169,29 @@
               <li class="catalog__filter-radio-item">
                 <label>
                   <input class="visually-hidden catalog__filter-radio-input" type="radio" name="milk-group" value="no_matter" checked>
-                    <span class="catalog__filter-radio-mark"></span>
-                    <span class="catalog__filter-radio-name">Неважно</span>
+                  <span class="catalog__filter-radio-mark"></span>
+                  <span class="catalog__filter-radio-name">Неважно</span>
                 </label>
               </li>
               <li class="catalog__filter-radio-item">
                 <label>
                   <input class="visually-hidden catalog__filter-radio-input" type="radio" name="milk-group" value="animal">
-                    <span class="catalog__filter-radio-mark"></span>
-                    <span class="catalog__filter-radio-name">Только животное</span>
+                  <span class="catalog__filter-radio-mark"></span>
+                  <span class="catalog__filter-radio-name">Только животное</span>
                 </label>
               </li>
               <li class="catalog__filter-radio-item">
                 <label>
                   <input class="visually-hidden catalog__filter-radio-input" type="radio" name="milk-group" value="plant">
-                    <span class="catalog__filter-radio-mark"></span>
-                    <span class="catalog__filter-radio-name">Только растительное</span>
+                  <span class="catalog__filter-radio-mark"></span>
+                  <span class="catalog__filter-radio-name">Только растительное</span>
                 </label>
               </li>
               <li class="catalog__filter-radio-item">
                 <label>
                   <input class="visually-hidden catalog__filter-radio-input" type="radio" name="milk-group" value="without" disabled>
-                    <span class="catalog__filter-radio-mark"></span>
-                    <span class="catalog__filter-radio-name">Без молока</span>
+                  <span class="catalog__filter-radio-mark"></span>
+                  <span class="catalog__filter-radio-name">Без молока</span>
                 </label>
               </li>
             </ul>
@@ -204,36 +204,36 @@
               <li class="catalog__filter-toggle-item">
                 <label>
                   <input class="visually-hidden catalog__filter-toggle-input" type="checkbox" name="Brasil" checked>
-                    <span class="catalog__filter-toggle-mark"></span>
-                    <span class="catalog__filter-toggle-name">Бразилия</span>
+                  <span class="catalog__filter-toggle-mark"></span>
+                  <span class="catalog__filter-toggle-name">Бразилия</span>
                 </label>
               </li>
               <li class="catalog__filter-toggle-item">
                 <label>
                   <input class="visually-hidden catalog__filter-toggle-input" type="checkbox" name="Ephiopia">
-                    <span class="catalog__filter-toggle-mark"></span>
-                    <span class="catalog__filter-toggle-name">Эфиопия</span>
+                  <span class="catalog__filter-toggle-mark"></span>
+                  <span class="catalog__filter-toggle-name">Эфиопия</span>
                 </label>
               </li>
               <li class="catalog__filter-toggle-item">
                 <label>
                   <input class="visually-hidden catalog__filter-toggle-input" type="checkbox" name="Columbia">
-                    <span class="catalog__filter-toggle-mark"></span>
-                    <span class="catalog__filter-toggle-name">Колумбия</span>
+                  <span class="catalog__filter-toggle-mark"></span>
+                  <span class="catalog__filter-toggle-name">Колумбия</span>
                 </label>
               </li>
               <li class="catalog__filter-toggle-item">
                 <label>
                   <input class="visually-hidden catalog__filter-toggle-input" type="checkbox" name="Costa-Rica">
-                    <span class="catalog__filter-toggle-mark"></span>
-                    <span class="catalog__filter-toggle-name">Коста-Рика</span>
+                  <span class="catalog__filter-toggle-mark"></span>
+                  <span class="catalog__filter-toggle-name">Коста-Рика</span>
                 </label>
               </li>
               <li class="catalog__filter-toggle-item">
                 <label>
                   <input class="visually-hidden catalog__filter-toggle-input" type="checkbox" name="Peru" disabled>
-                    <span class="catalog__filter-toggle-mark"></span>
-                    <span class="catalog__filter-toggle-name">Перу</span>
+                  <span class="catalog__filter-toggle-mark"></span>
+                  <span class="catalog__filter-toggle-name">Перу</span>
                 </label>
               </li>
             </ul>
@@ -247,7 +247,7 @@
           <h3 class="catalog__filter-sort-heading">
             Сортировка:
           </h3>
-          <select class="catalog__filter-sort-select" aria-label="Сортировка">
+          <select class="catalog__filter-sort-select" name="catalog-select" aria-label="Сортировка">
             <option value="default" selected>по умолчанию</option>
           </select>
         </div>
@@ -268,7 +268,7 @@
               </p>
               <div class="product-card__order">
                 <span class="product-card__order-price">225₽</span>
-                <button class="product-card__order-button button">В корзину</button>
+                <button class="product-card__order-button button" type="button">В корзину</button>
               </div>
             </article>
           </li>
@@ -288,7 +288,7 @@
               </p>
               <div class="product-card__order">
                 <span class="product-card__order-price">225₽</span>
-                <button class="product-card__order-button button">В корзину</button>
+                <button class="product-card__order-button button" type="button">В корзину</button>
               </div>
             </article>
           </li>
@@ -308,7 +308,7 @@
               </p>
               <div class="product-card__order">
                 <span class="product-card__order-price">225₽</span>
-                <button class="product-card__order-button button">В корзину</button>
+                <button class="product-card__order-button button" type="button">В корзину</button>
               </div>
             </article>
           </li>
@@ -328,7 +328,7 @@
               </p>
               <div class="product-card__order">
                 <span class="product-card__order-price">225₽</span>
-                <button class="product-card__order-button button">В корзину</button>
+                <button class="product-card__order-button button" type="button">В корзину</button>
               </div>
             </article>
           </li>
@@ -348,7 +348,7 @@
               </p>
               <div class="product-card__order">
                 <span class="product-card__order-price">225₽</span>
-                <button class="product-card__order-button button">В корзину</button>
+                <button class="product-card__order-button button" type="button">В корзину</button>
               </div>
             </article>
           </li>
@@ -368,14 +368,43 @@
               </p>
               <div class="product-card__order">
                 <span class="product-card__order-price">225₽</span>
-                <button class="product-card__order-button button">В корзину</button>
+                <button class="product-card__order-button button" type="button">В корзину</button>
               </div>
             </article>
           </li>
         </ul>
+        <ol class="catalog__pagination">
+          <li class="catalog__pagination-item">
+            <a class="catalog__pagination-link" href="#">0</a>
+          </li>
+          <li class="catalog__pagination-item">
+            <a class="catalog__pagination-link" href="#">1</a>
+          </li>
+          <li class="catalog__pagination-item">
+            <a class="catalog__pagination-link catalog__pagination-link--current" href="#">2</a>
+          </li>
+          <li class="catalog__pagination-item">
+            <a class="catalog__pagination-link" href="#">3</a>
+          </li>
+          <li class="catalog__pagination-item">
+            <a class="catalog__pagination-link" href="#">4</a>
+          </li>
+        </ol>
       </div>
     </section>
-
+    <section class="map" data-test="map">
+      <h2 class="map__heading visually-hidden">
+        Мы на карте
+      </h2>
+      <picture>
+        <source type="image/webp" media="(min-width: 1440px)" width="1440" height="540" srcset="images/map-bg-desktop@1x.webp 1x, images/map-bg-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" width="768" height="480" srcset="images/map-bg-tablet@1x.webp 1x, images/map-bg-tablet@2x.webp 2x">
+        <source type="image/webp" width="320" height="420" srcset="images/map-bg-mobile@1x.webp 1x, images/map-bg-mobile@2x.webp 2x">
+        <source type="image/png" media="(min-width: 1440px)" width="1440" height="540" srcset="images/map-bg-desktop@1x.png 1x, images/map-bg-desktop@2x.png 2x">
+        <source type="image/png" media="(min-width: 768px)" width="768" height="480" srcset="images/map-bg-tablet@1x.png 1x, images/map-bg-tablet@2x.png 2x">
+        <source type="image/png" width="320" height="420" src="images/map-bg-mobile@1x.png" srcset="images/map-bg-mobile@2x.png 2x" alt="Мы на карте города">
+      </picture>
+    </section>
   </main>
 
 </body>
