@@ -3,9 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>Drink2Go - качественные кофейные напитки в удобном формате</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -21,40 +24,38 @@
     </a>
     <nav class="main-nav main-nav--closed">
       <div class="main-nav__toggle-wrapper">
-        <a class="main-nav__toggle-link" href="#">
+        <a class="main-nav__toggle-link main-nav__toggle-link--login" href="#">
           <span class="visually-hidden">Войти</span>
         </a>
-        <a class="main-nav__toggle-link" href="#">
+        <a class="main-nav__toggle-link main-nav__toggle-link--basket" href="#">
           <span class="visually-hidden">Корзина</span>
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <div class="main-nav__list-wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item  main-nav__item--current">
-            <a class="main-nav__link" href="#">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              Доставка
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              О нас
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item  main-nav__item--current">
+          <a class="main-nav__link" href="#">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">
+            Каталог
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">
+            Доставка
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">
+            О нас
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main-container">
@@ -498,6 +499,7 @@
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener noreferrer">Разработано в HTML Academy</a>
     </div>
   </footer>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
