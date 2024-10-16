@@ -29,6 +29,31 @@
   margin: 0;
 }
 
+.catalog__filter-sort {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.catalog__filter-sort-heading {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+}
+
+.catalog__filter-sort-select {
+  border: none;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+  color: $base-primary;
+}
+
 .catalog__cards-list {
   list-style-type: none;
   margin: 0;
