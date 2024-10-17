@@ -1,8 +1,15 @@
+.footer-nav {
+  border-top: 1px solid $base-secondary;
+  padding: 20px 0;
+}
+
 .footer-nav__title {
   color: $base-primary;
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
+  letter-spacing: 0.28px;
+  margin: 0;
 }
 
 .footer-nav__list {
