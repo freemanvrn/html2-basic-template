@@ -32,8 +32,7 @@
 .catalog__filter-sort {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin: 40px 0 20px 3px;
 }
 
 .catalog__filter-sort-heading {
@@ -58,6 +57,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 40px;
 }
 
 .catalog__pagination {
@@ -94,3 +94,31 @@
   font-weight: 600;
 }
 
+.catalog__pagination-link--prev,
+.catalog__pagination-link--next {
+  position: relative;
+}
+
+.catalog__pagination-link--prev::before {
+  position: absolute;
+  content: "";
+  mask-image: url("../../icons/pagination-prev.svg");
+  mask-repeat: no-repeat;
+  background-color: $base-primary;
+  width: 6px;
+  height: 10px;
+  top: 15px;
+  left: 16px;
+}
+
+.catalog__pagination-link--next::before {
+  position: absolute;
+  content: "";
+  mask-image: url("../../icons/pagination-next.svg");
+  mask-repeat: no-repeat;
+  background-color: $base-primary;
+  width: 6px;
+  height: 10px;
+  top: 15px;
+  left: 18px;
+}

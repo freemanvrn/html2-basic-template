@@ -63,7 +63,9 @@
     <h1 class="visually-hidden">Drink2Go - качественные кофейные напитки в удобном формате</h1>
 
     <section class="hero" data-test="hero">
-      <div class="hero__wrapper slider-pagination">
+      <div class="hero__wrapper slider-pagination container">
+        <!-- <button class="slider-button-prev" type="button"></button> -->
+        <!-- <button class="slider-button-next" type="button"></button> -->
         <picture>
           <source type="image/webp" media="(min-width: 1440px)" width="600" height="600" srcset="images/flat-white-desktop@1x.webp 1x, images/flat-white-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" width="476" height="476" srcset="images/flat-white-tablet@1x.webp 1x, images/flat-white-tablet@2x.webp 2x">
@@ -117,7 +119,7 @@
               Удобство
             </h3>
             <p class="features__description">
-              Легко помещается и в карман,<br> и в маленькую сумочку
+              Легко помещается и в карман,<br>и в маленькую сумочку
             </p>
           </li>
           <li class="features__item features__item--energy">
@@ -133,7 +135,7 @@
               Экологичность
             </h3>
             <p class="features__description">
-              Вся упаковка сделана<br> из перерабатываемых материалов
+              Вся упаковка сделана<br>из перерабатываемых материалов
             </p>
           </li>
         </ul>
@@ -141,7 +143,7 @@
     </section>
 
     <section class="catalog" data-test="catalog">
-      <div class="catalog__wrapper">
+      <div class="catalog__wrapper container">
         <p class="catalog__badge">
           Каталог
         </p>
@@ -377,7 +379,9 @@
         </ul>
         <ol class="catalog__pagination">
           <li class="catalog__pagination-item">
-            <a class="catalog__pagination-link slider-button-prev" href="#">0</a>
+            <a class="catalog__pagination-link catalog__pagination-link--prev" href="#">
+              <span class="visually-hidden">0</span>
+            </a>
           </li>
           <li class="catalog__pagination-item">
             <a class="catalog__pagination-link" href="#">1</a>
@@ -389,7 +393,9 @@
             <a class="catalog__pagination-link" href="#">3</a>
           </li>
           <li class="catalog__pagination-item">
-            <a class="catalog__pagination-link slider-button-next" href="#">4</a>
+            <a class="catalog__pagination-link catalog__pagination-link--next" href="#">
+              <span class="visually-hidden">4</span>
+            </a>
           </li>
         </ol>
       </div>
@@ -398,14 +404,14 @@
       <h2 class="map__heading visually-hidden">
         Мы на карте
       </h2>
-      <div class="map__wrapper">
+      <div class="map__wrapper container">
         <picture>
           <source type="image/webp" media="(min-width: 1440px)" width="1440" height="540" srcset="images/map-bg-desktop@1x.webp 1x, images/map-bg-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" width="768" height="480" srcset="images/map-bg-tablet@1x.webp 1x, images/map-bg-tablet@2x.webp 2x">
           <source type="image/webp" width="320" height="420" srcset="images/map-bg-mobile@1x.webp 1x, images/map-bg-mobile@2x.webp 2x">
           <source type="image/png" media="(min-width: 1440px)" width="1440" height="540" srcset="images/map-bg-desktop@1x.png 1x, images/map-bg-desktop@2x.png 2x">
           <source type="image/png" media="(min-width: 768px)" width="768" height="480" srcset="images/map-bg-tablet@1x.png 1x, images/map-bg-tablet@2x.png 2x">
-          <source type="image/png" width="320" height="420" src="images/map-bg-mobile@1x.png" srcset="images/map-bg-mobile@2x.png 2x" alt="Мы на карте города">
+          <img type="image/png" width="320" height="420" src="images/map-bg-mobile@1x.png" srcset="images/map-bg-mobile@2x.png 2x" alt="Мы на карте города">
         </picture>
       </div>
     </section>
