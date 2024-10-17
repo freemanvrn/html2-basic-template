@@ -1,3 +1,47 @@
 .social__list {
   list-style-type: none;
+  display: flex;
+}
+
+.social__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.social__link--vk::after {
+  position: absolute;
+  content: "";
+  mask-image: url("../../icons/vk.svg");
+  mask-repeat: no-repeat;
+  background-color: $base-grey;
+  width: 20px;
+  height: 20px;
+  top: -8px;
+  left: 9px;
+}
+
+.social__link--pinterest::after {
+  position: absolute;
+  content: "";
+  mask-image: url("../../icons/pinterest.svg");
+  mask-repeat: no-repeat;
+  background-color: $base-grey;
+  width: 22px;
+  height: 22px;
+  top: -9px;
+  left: 66px;
+}
+
+.social__link--ok::after {
+  position: absolute;
+  content: "";
+  mask-image: url("../../icons/ok.svg");
+  mask-repeat: no-repeat;
+  background-color: $base-grey;
+  width: 20px;
+  height: 20px;
+  top: -8px;
+  left: 128px;
 }
